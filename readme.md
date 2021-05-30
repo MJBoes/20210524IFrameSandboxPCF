@@ -6,6 +6,7 @@
 - npm i dompurify --save
 - npm i --save-dev @types/dompurify
 ## Change predefined manifest file
+~~~
 - version="0.0.1" > version="1.0.0"
 - description-key="DTSIFrameSandbox description" > description-key="DTS Power Apps Custom Framework component to add an sandboxed IFrame to Apps. Style, src and srcdoc are parameterized."
 - remove <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
@@ -13,6 +14,7 @@
 - add <property name="iframesrc" display-name-key="IFrame src" description-key="Optional URL for the iFrame sandbox tag" of-type="SingleLine.Text" usage="bound" required="false" />
 - add <property name="iframesrcdoc" display-name-key="IFrame srcdoc" description-key="Optional content for the iFrame sandbox tag." of-type="SingleLine.Text" usage="bound" required="false" />
 - run npm run build to update the types.d.ts
+~~~
 ## Develop the code in index.ts
 - see code
 - test in browser: npm start
