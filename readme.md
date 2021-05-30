@@ -1,3 +1,4 @@
+![](Screenshot Component.png)
 # Walkthough
 ## Create the new project
 - pac pcf init --namespace DTS --name DTSIFrameSandbox --template field
