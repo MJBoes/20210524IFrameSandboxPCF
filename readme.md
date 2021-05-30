@@ -33,3 +33,4 @@
 - Import v1.0.0
 
 ## Publish to github
+Some references to blog or YouTube video to follow.
