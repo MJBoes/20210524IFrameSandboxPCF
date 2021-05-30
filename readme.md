@@ -1,4 +1,4 @@
-![](Screenshot Component.png)
+![](https://github.com/MJBoes/20210524IFrameSandboxPCF/blob/master/Screenshot%20Component.png)
 # Walkthough
 ## Create the new project
 - pac pcf init --namespace DTS --name DTSIFrameSandbox --template field
