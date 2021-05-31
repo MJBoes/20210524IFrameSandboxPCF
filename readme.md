@@ -4,12 +4,13 @@ This project adds a simple iFrame functionality to Canvas Power Apps. It is prim
 ## Example
 The Canvas App in the screenshot contains the control with the name dtsFlowViewer and is configured as follows:
 ~~~~
-iframestyles
-"#dtswrap {width: " & dtsFlowViewer.Width & "px;height: " & dtsFlowViewer.Height & "px;padding: 0;overflow: hidden;border:1px solid #00126B;} #dtsiframe { width: " & 100/sldZoom.Value*100 & "%; height: "& 100/sldZoom.Value*100 & "%; border: none; transform: scale(" & sldZoom.Value / 100 & "); transform-origin: 0 0;}"
-iframesrcdoc
-varSourceDoc
+iframestyles="#dtswrap {width: " & dtsFlowViewer.Width & "px;height: " & dtsFlowViewer.Height & "px;padding: 0;overflow: hidden;border:1px solid #00126B;} #dtsiframe { width: " & 100/sldZoom.Value*100 & "%; height: "& 100/sldZoom.Value*100 & "%; border: none; transform: scale(" & sldZoom.Value / 100 & "); transform-origin: 0 0;}"
+iframesrcdoc=varSourceDoc
 ~~~~
-
+The slider is called sldZoom and by updating the iframesstyle parameter, the content in the iFrame is scale when the zoom percentage is changed.
+The varSourceDoc just contains the HTML to be displayed.
+## Script attack mitigation
+The component has two defences against malicious usage. The HTML inserted in the iFrame element is cleaned first with DOMPurify. Also, the iFrame tag as the sandbox attribute applied.
 # Walkthough
 ## Create the new project
 - pac pcf init --namespace DTS --name DTSIFrameSandbox --template field
