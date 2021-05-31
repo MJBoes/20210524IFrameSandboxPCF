@@ -1,4 +1,4 @@
-![](https://github.com/MJBoes/20210524IFrameSandboxPCF/blob/master/Screenshot%20Component.png)
+![](https://github.com/MJBoes/20210524IFrameSandboxPCF/blob/master/ReadmeAssets/Screenshot%20Component.png)
 # Summary
 This project adds a simple iFrame functionality to Canvas Power Apps. It is primarily intended to display HTML pages constructed from the Power Automate Flow Designer, but can be used for other needs as well.
 ## Example
