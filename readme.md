@@ -1,4 +1,15 @@
 ![](https://github.com/MJBoes/20210524IFrameSandboxPCF/blob/master/Screenshot%20Component.png)
+# Summary
+This project adds a simple iFrame functionality to Canvas Power Apps. It is primarily intended to display HTML pages constructed from the Power Automate Flow Designer, but can be used for other needs as well.
+## Example
+The Canvas App in the screenshot contains the control with the name dtsFlowViewer and is configured as follows:
+~~~~
+iframestyles
+"#dtswrap {width: " & dtsFlowViewer.Width & "px;height: " & dtsFlowViewer.Height & "px;padding: 0;overflow: hidden;border:1px solid #00126B;} #dtsiframe { width: " & 100/sldZoom.Value*100 & "%; height: "& 100/sldZoom.Value*100 & "%; border: none; transform: scale(" & sldZoom.Value / 100 & "); transform-origin: 0 0;}"
+iframesrcdoc
+varSourceDoc
+~~~~
+
 # Walkthough
 ## Create the new project
 - pac pcf init --namespace DTS --name DTSIFrameSandbox --template field
