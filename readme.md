@@ -11,6 +11,7 @@ The slider is called sldZoom and by updating the iframesstyle parameter, the con
 The varSourceDoc just contains the HTML to be displayed.
 ## Script attack mitigation
 The component has two defences against malicious usage. The HTML inserted in the iFrame element is sanitized first with DOMPurify. Also, the iFrame tag as the sandbox attribute applied.
+
 # Walkthough
 ## Create the new project
 - pac pcf init --namespace DTS --name DTSIFrameSandbox --template field
