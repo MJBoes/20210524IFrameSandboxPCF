@@ -35,9 +35,10 @@ export class DTSIFrameSandbox implements ComponentFramework.StandardControl<IInp
 		this.elemIFrame.sandbox;
 		if(context.parameters.iframesrc.raw){
 			this.elemIFrame.src=DOMPurify.sanitize(context.parameters.iframesrc.raw);
-		}
-		if(context.parameters.iframesrcdoc.raw){
-			this.elemIFrame.srcdoc=context.parameters.iframesrcdoc.raw;
+		}else{
+			if(context.parameters.iframesrcdoc.raw){
+				this.elemIFrame.srcdoc=DOMPurify.sanitize(context.parameters.iframesrcdoc.raw);
+			}
 		}
 		this.elemWrap.appendChild(this.elemIFrame);
 		container.appendChild(this.elemWrap);
@@ -55,9 +56,10 @@ export class DTSIFrameSandbox implements ComponentFramework.StandardControl<IInp
 		}
 		if(context.parameters.iframesrc.raw){
 			this.elemIFrame.src=DOMPurify.sanitize(context.parameters.iframesrc.raw);
-		}
-		if(context.parameters.iframesrcdoc.raw){
-			this.elemIFrame.srcdoc=context.parameters.iframesrcdoc.raw;
+		}else{
+			if(context.parameters.iframesrcdoc.raw){
+				this.elemIFrame.srcdoc=DOMPurify.sanitize(context.parameters.iframesrcdoc.raw);
+			}
 		}
 	}
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="DTS" constructor="DTSIFrameSandbox" version="1.0.0" display-name-key="DTSIFrameSandbox" description-key="DTS Power Apps Custom Framework component to add an sandboxed IFrame to Apps. Style, src and srcdoc are parameterized." control-type="standard">
+  <control namespace="DTS" constructor="DTSIFrameSandbox" version="1.0.1" display-name-key="DTSIFrameSandbox" description-key="DTS Power Apps Custom Framework component to add an sandboxed IFrame to Apps. Style, src and srcdoc are parameterized." control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="iframestyles" display-name-key="IFrame Styles" description-key="CSS description of #wrap and #frame placed DOMPurified between style tags in the component" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="iframesrc" display-name-key="IFrame src" description-key="Optional URL for the iFrame sandbox tag" of-type="SingleLine.Text" usage="bound" required="false" />

@@ -1,4 +1,4 @@
-![](https://github.com/MJBoes/20210524IFrameSandboxPCF/blob/master/Screenshot%20Component.png)
+![](https://github.com/MJBoes/20210524IFrameSandboxPCF/blob/master/ReadmeAssets/Screenshot%20Component.png)
 # Summary
 This project adds a simple iFrame functionality to Canvas Power Apps. It is primarily intended to display HTML pages constructed from the Power Automate Flow Designer, but can be used for other needs as well.
 ## Example
@@ -47,3 +47,14 @@ The component has two defences against malicious usage. The HTML inserted in the
 
 ## Publish to github
 Some references to blog or YouTube video to follow.
+
+## 1.0.1
+Added check on src parameter to support both src and srcdoc property (src does not render if there is a srcdoc attribute)
+npm run build
+create sub folder v101, navigate in folder, pac solution init --publisher-name dts --publisher-prefix dts
+update solution.xml
+pac solution add-reference --path D:\Data\2021\20210524IFrameSandboxPCF
+cd..
+& 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe' /t:restore
+& 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
+-> version is recognized as an update over 1.0
